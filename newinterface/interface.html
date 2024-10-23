@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventEye Interface</title>
+    <link rel="stylesheet" href="interface.css">
+</head>
+<body>
+    <h1>EventEye Surveillance Interface</h1>
+    
+    <div class="indicator" id="densityIndicator"></div>
+
+    <div class="new">
+        <div class="left-section">
+            <div class="event-info">
+                <h2>Event Information</h2>
+                <p><strong>Event Name:</strong> Jignasa 2024</p>
+                <p><strong>Organizer:</strong> GPREC</p>
+                <p><strong>Area:</strong> G Pulla Reddy Engineering College, Kurnool</p>
+            </div>
+
+            <div class="internal-display">
+                <h2>Internal Camera Display</h2>
+                <video id="videoDisplay" autoplay></video>
+                <div class="controls">
+                    <button id="startCamera">Use Camera</button>
+                    <button id="stopCamera">Stop Camera</button>
+                </div>
+            </div>
+
+            <div class="external-display">
+                <h2>External Video Upload</h2>
+                <input type="file" id="videoUpload" accept="video/*">
+                <video id="uploadedVideo" controls></video>
+            </div>
+
+            <div class="data-container">
+                <div class="data-stats" id="dataStats">Data Statistics: <span id="stats"></span></div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="alert-container">
+                <h2>Alerts</h2>
+                <div id="alert-container"></div>
+                <button id="clear-btn">Clear Alerts</button>
+            </div>
+
+            <div class="heatmap-display">
+                <h2>Crowd Density Heatmap</h2>
+                <div id="heatmap" class="heatmap">Heatmap goes here</div>
+                <div class="density-info">
+                    <p id="stats"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="interface.js"></script>
+</body>
+</html>

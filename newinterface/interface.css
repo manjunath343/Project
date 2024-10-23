@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.new {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.left-section, .right-section {
+    width: 85%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.event-info {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.internal-display, .external-display {
+    margin: 20px 0;
+}
+
+video {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.data-stats {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+}
+
+.controls {
+    margin-left: 20%;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.heatmap-display {
+    margin-top: 20px;
+}
+
+.heatmap {
+    width: 100%;
+    height: 300px;
+    background-color: #f0e68c;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#alert-container {
+    width: 100%;
+    height: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.alert-box {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.timestamp {
+    font-size: 0.9em;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+#clear-btn {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Indicator styling */
+.indicator {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
