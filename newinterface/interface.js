@@ -44,7 +44,7 @@ function getCrowdDensity() {
 function updateIndicator(crowdDensity) {
     if (crowdDensity < 30) {
         densityIndicator.style.backgroundColor = 'green';
-    } else if (crowdDensity < 70) {
+    } else if (crowdDensity <=50) {
         densityIndicator.style.backgroundColor = 'yellow';
     } else {
         densityIndicator.style.backgroundColor = 'red';
